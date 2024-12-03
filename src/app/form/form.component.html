@@ -1,0 +1,8 @@
+<p>form works!</p>
+
+<form action="">
+    <label for="nombre">Nombre</label>
+    <input type="text" placeholder="Ingrese su nombre" #nombre value="">
+    <input type="button" value="Enviar" (click)="saludar(nombre.value)">
+    <div #saludo>Hola {{nombre.value}} {{apellido}}</div>
+</form>
